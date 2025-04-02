@@ -5,7 +5,6 @@
   "projects": {
     "src": {
       "projectType": "application",
-      "schematics": {},
       "root": "src",
       "sourceRoot": "src",
       "prefix": "app",
@@ -27,7 +26,6 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
           },
           "configurations": {
             "production": {
@@ -86,7 +84,6 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
           }
         }
       }
