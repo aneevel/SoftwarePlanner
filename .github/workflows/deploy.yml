@@ -26,10 +26,12 @@ jobs:
         run: npm install -g @angular/cli
 
       - name: Build the application
-        run: ng build -- --configuration production --base-href "https://aneevel.github.io/SoftwarePlanner"
+        run: 
+          cd frontend
+          ng build -- --configuration production --base-href "https://aneevel.github.io/SoftwarePlanner"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ../../frontend/dist/src/browser/
+          publish_dir: ./dist/src/browser/
