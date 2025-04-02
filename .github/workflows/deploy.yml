@@ -26,7 +26,7 @@ jobs:
         run: npm install
 
       - name: Install Angular CLI
-        run: npm install -g @angular/cli
+        run: npm install -g @angular/cli@2.0.3
 
       - name: Print environment variables 
         run: env
