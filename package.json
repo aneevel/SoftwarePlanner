@@ -1,5 +1,10 @@
 {
   "dependencies": {
-    "@angular/core": "^19.2.4"
+    "@angular/core": "^19.2.4",
+    "angular-cli-ghpages": "^2.0.3",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^19.2.5"
   }
 }
