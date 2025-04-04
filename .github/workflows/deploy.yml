@@ -20,7 +20,9 @@ jobs:
           node-version: '23.9.0'  # Specify the Node.js version you want to use
 
       - name: Clean npm cache 
-        run: npm cache clean --force
+        run: | 
+          cd frontend
+          npm cache clean --force
 
       - name: Install dependencies
         run: | 
@@ -28,13 +30,17 @@ jobs:
           npm install
 
       - name: Install Angular CLI
-        run: npm install -g @angular/cli@17.3.6
+        run: |
+          cd frontend
+          npm install -g @angular/cli@17.3.6
+          npm install --save-dev @angular-devkit/build-angular
 
       - name: Print environment variables 
         run: env
 
       - name: Build the application
         run: |
+          cd frontend
           ng build -- --configuration production --base-href "https://aneevel.github.io/SoftwarePlanner"
 
       - name: Deploy to GitHub Pages
