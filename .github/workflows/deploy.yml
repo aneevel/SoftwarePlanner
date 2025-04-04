@@ -35,7 +35,6 @@ jobs:
 
       - name: Build the application
         run: |
-          cd frontend
           ng build -- --configuration production --base-href "https://aneevel.github.io/SoftwarePlanner"
 
       - name: Deploy to GitHub Pages
