@@ -23,7 +23,9 @@ jobs:
         run: npm cache clean --force
 
       - name: Install dependencies
-        run: npm install
+        run: | 
+          cd frontend
+          npm install
 
       - name: Install Angular CLI
         run: npm install -g @angular/cli@17.3.6
