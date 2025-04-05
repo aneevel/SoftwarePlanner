@@ -41,7 +41,7 @@ jobs:
       - name: Build the application
         run: |
           cd frontend
-          ng build -- --configuration production --base-href "https://aneevel.github.io/SoftwarePlanner"
+          ng build --configuration production --base-href "https://aneevel.github.io/SoftwarePlanner"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
