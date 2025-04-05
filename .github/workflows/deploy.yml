@@ -32,8 +32,8 @@ jobs:
       - name: Install Angular CLI
         run: |
           cd frontend
-          npm install -g @angular/cli@19.2.6
-          npm install --save-dev @angular-devkit/build-angular@19.2.6
+          npm install -g @angular/cli@19.2.5
+          npm install --save-dev @angular-devkit/build-angular@19.2.5
 
       - name: Print environment variables 
         run: env
