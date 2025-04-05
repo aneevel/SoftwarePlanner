@@ -33,7 +33,7 @@ jobs:
         run: |
           cd frontend
           npm install -g @angular/cli@17.3.6
-          npm install --save-dev @angular-devkit/build-angular
+          npm install --save-dev @angular-devkit/build-angular:application
 
       - name: Print environment variables 
         run: env
